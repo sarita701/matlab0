@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="icon" type="image/jpg" href="/home/imagess/index.jpg ">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(120deg, #5a5a5a, #2e2e2e); 
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #444; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #bfbfbf; 
+            transform: translateY(-5px);
+        }
+
+        section {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            text-align: center;
+            transform: translateY(30px);
+            animation: slideUp 1.2s ease-out;
+        }
+
+        section p {
+            font-size: 1.5em;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #5a5a5a; 
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #787878;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-bottom: 15px;
+            }
+
+            section {
+                padding: 30px;
+                margin: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Project!</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/gg.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p>This is my project hosted on GitHub Pages.</p>
+    </section>
+
+</body>
+
+</html>
